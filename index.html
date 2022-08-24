@@ -86,7 +86,14 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img class="img-fluid" src="./img/ebook-cover.png" />
+            <!-- tooltip -->
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Net Ninja Book COVER"
+            >
+              <img class="img-fluid" src="./img/ebook-cover.png" />
+            </span>
           </div>
         </div>
       </div>
@@ -452,6 +459,15 @@
                 class="form-control"
                 placeholder="e.g mario@example.com"
               />
+
+              <span
+                class="input-group-text"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Enter an email address we can reply to."
+              >
+                <i class="bi bi-question-circle text-muted"></i>
+              </span>
             </div>
 
             <label for="name" class="form-label">Name: </label>
@@ -465,6 +481,14 @@
                 id="name"
                 placeholder="e.g Mario"
               />
+              <span
+                class="input-group-text"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="This aspect is self explanatory"
+              >
+                <i class="bi bi-question-circle text-muted"></i>
+              </span>
             </div>
 
             <label for="subject" class="form-label"
@@ -499,11 +523,85 @@
       </div>
     </section>
 
+    <section class="bg-light">
+      <div class="container text-center">
+        <h2>Stay in The Loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p class="text-muted my-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              doloribus distinctio, porro sequi reprehenderit sapiente mollitia
+              perspiciatis? Nam quae enim quas quia facere, molestiae ipsam
+              alias exercitationem saepe quibusdam vero?
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Register for Updates
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              consectetur ea, quia id necessitatibus veniam exercitationem atque
+              velit laudantium quis.
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="e.g mario@example.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap js bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
