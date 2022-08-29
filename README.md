@@ -20,10 +20,10 @@ Net ninja pro e-book is an e-book about web design, <br />Responsive for all dev
 
 ### Credit and Acknowledgment
 
-This repo is a modified build of the Video linked below and was created to learn about HTML,CSS,jQuery and Bootstrap. Most Credits goes to the YouTube Channel linked below
+This repo is a modified build of the video playlist linked below and was created to learn about HTML,CSS,jQuery and Bootstrap. Most Credits goes to the YouTube Channel linked below
 
-- [YouTube Video Link](https://youtu.be/4sosXZsdy-s)
-- [YouTube Channel Link](https://www.youtube.com/c/TraversyMedia)
+- [YouTube Playlist Link](https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR)
+- [YouTube Channel Link](https://www.youtube.com/c/TheNetNinja)
 
 <br/>
 
